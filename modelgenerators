@@ -12,9 +12,9 @@ rails g model Customer name poc street_1 street_2 city zip state phone email
 
 rails g model Team name
 
-rails g Team_user team_id:integer user_id:integer
+rails g model Team_user team_id:integer user_id:integer
 
-rails g User user_type f_name l_name password_digest email phone
+rails g model User user_type f_name l_name password_digest email phone
 
 CONTROLLERS
 
