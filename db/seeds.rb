@@ -8,11 +8,11 @@
 
 
 Company.create(name: "Power Cleanouts", phone: "201-624-1171", website: "http://powercleanouts.com")
-Location.create(city: "North Bergen", nickname: "north bergen")
+Location.create(city: "North Bergen", nickname: "north bergen", company_id: 1)
 
-User.create(type: "owner", f_name: "Yoan", l_name: "Ante", email: "yoanante@gmail.com", phone: "201-675-6069")
-User.create(type: "manager", f_name: "George", l_name: "Menendez", email: "george@powercleanouts.com", phone: "201-624-1171")
-User.create(type: "employee", f_name: "Miguel", l_name: "Diaz", email: "miguel@powercleanouts.com", phone: "201-555-5555")
+User.create(user_type: "owner", f_name: "Yoan", l_name: "Ante", email: "yoanante@gmail.com", phone: "201-675-6069", company_id: 1)
+User.create(user_type: "manager", f_name: "George", l_name: "Menendez", email: "george@powercleanouts.com", phone: "201-624-1171", company_id: 1)
+User.create(user_type: "employee", f_name: "Miguel", l_name: "Diaz", email: "miguel@powercleanouts.com", phone: "201-555-5555", company_id: 1)
 
 Team.create(name: "Green")
 Team.create(name: "Yellow")
