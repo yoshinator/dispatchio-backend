@@ -1,0 +1,41 @@
+MODELS
+
+rails g model Company name phone website
+
+rails g model Location city nickname 
+
+rails g model Job customer_id:integer location_id:integer team_id:integer street_1 street_2 city zip state price:integer schedule_date schedule_time start_time end_time status payment_type paid:boolean 
+
+rails g model image image_url job_id:integer
+
+rails g model Customer name poc street_1 street_2 city zip state phone email
+
+rails g model Team name
+
+rails g Team_user team_id:integer user_id:integer
+
+rails g User user_type f_name l_name password_digest email phone
+
+CONTROLLERS
+
+rails g controller api/v1/companies
+
+rails g controller api/v1/locations
+
+rails g controller api/v1/jobs
+
+rails g controller api/v1/customers
+
+rails g controller api/v1/teams 
+
+rails g controller api/v1/users
+
+SERIALIZERS
+
+
+rails g serializer location 
+
+rails g serializer user
+rails g serializer customer
+
+rails g serializer team
