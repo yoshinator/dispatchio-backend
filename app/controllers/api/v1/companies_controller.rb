@@ -25,8 +25,8 @@ class Api::V1::CompaniesController < ApplicationController
 
 
   def update
-    @Company.update(companies_params)
-    if @Company.save
+    @company.update(company_params)
+    if @company.save
       render json: @company, status: :accepted
     else
       render json: { errors: @company.errors.full_messages }, status: :unprocessible_entity
@@ -36,7 +36,7 @@ class Api::V1::CompaniesController < ApplicationController
   private
 
   def company_params
-    params.permit(:id, :name, :phone, :website)
+    params.require(:company).permit(:id, :name, :phone, :website)
   end 
 
   def find_company
