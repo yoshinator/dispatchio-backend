@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :teams
       resources :customers
       resources :locations
+      post '/login', to: 'auth#create'
       
     end 
   end 
