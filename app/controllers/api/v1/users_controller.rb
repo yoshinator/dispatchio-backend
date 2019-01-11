@@ -42,11 +42,24 @@ class Api::V1::UsersController < ApplicationController
     "Action not needed at this time"
   end 
 
+    def change_pw
+    @user = User.authenticate(current_user.email, user_params[:password])
+    if @user.nil?
+      render json: { message: 'Invalid username or password'}
+    else
+      if @user.valid?
+        @user.password = user_params[:user][:new_password] unless params[:user][:new_password].nil? || params[:user][:new_password].empty?
+        @user.save
+        render json: {message: "Password changed successfully"}
+      end  
+    end
+  end
+ 
 
   private
 
   def user_params
-    params.require(:user).permit(:id, :f_name, :l_name, :email, :password, :user_type, :phone, :company_id)
+    params.require(:user).permit(:id, :f_name, :l_name, :email, :password, :user_type, :phone, :company_id, :new_password)
   end 
 
   def find_user

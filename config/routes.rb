@@ -9,7 +9,8 @@ Rails.application.routes.draw do
       resources :teams
       resources :customers
       resources :locations
-      post '/login', to: 'auth#create'
+      post '/users/login', to: 'auth#create'
+      post '/users/reset', to: 'users#change_pw'
       
     end 
   end 
