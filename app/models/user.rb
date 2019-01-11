@@ -3,6 +3,6 @@ class User < ApplicationRecord
   validates :email, uniqueness: {case_sensitive: false}
   has_many :team_users
   has_many :teams, through: :team_users
-  belongs_to :company
+  belongs_to :location
 
 end
