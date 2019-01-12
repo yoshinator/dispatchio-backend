@@ -12,6 +12,10 @@ class Api::V1::UsersController < ApplicationController
     render json: @user, status: :accepted
   end
 
+  def jwt_user
+    render json: current_user, status: :accepted
+  end 
+
   def create
     @user = User.create(user_params)
     if @user.valid?
@@ -37,10 +41,6 @@ class Api::V1::UsersController < ApplicationController
     @user.destroy
     render json: @company, status: :accepted
   end
-
-  def sign_in
-    "Action not needed at this time"
-  end 
 
     def change_pw
     @user = User.authenticate(current_user.email, user_params[:password])
