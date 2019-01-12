@@ -27,3 +27,6 @@ TeamUser.create(team_id: 2, user_id: 3)
 Customer.create(name: "Andrew Thompson", poc: "Jason", street_1: "505 Washington Ave", street_2: "", city: "Hoboken", state: "NJ", zip: "07011", phone: "212-317-5112", email: "andy@tthomeservices.com")
 
 Job.create(customer_id: 1, location_id: 1, team_id: 1, street_1: "707 park ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 150, schedule_date: "1/18/2018", schedule_time: "8:00 am", paid: false)
+Job.create(customer_id: 1, location_id: 1, team_id: 2, street_1: "505 willow ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 150, schedule_date: "1/25/2018", schedule_time: "8:00 am", paid: false)
+
+Job.create(customer_id: 1, location_id: 1, team_id: 1, street_1: "1515 46th street", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/25/2018", schedule_time: "8:00 am", paid: false)
