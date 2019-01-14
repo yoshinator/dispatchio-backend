@@ -31,7 +31,6 @@ class Api::V1::JobsController < ApplicationController
 
   def jobs_by_week
     @jobs = Job.where(schedule_date: params[:job][:week])
-  
     render json: @jobs, status: :ok
   end 
 
