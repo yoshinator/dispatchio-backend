@@ -14,8 +14,9 @@ class Api::V1::JobsController < ApplicationController
     all_jobs = Job.where(schedule_date: params[:job][:schedule_date])
     @jobs = []
     all_jobs.each do |job| 
+
       job.team.users.each do |user|
-        if user.id == params[:job][:user_id]
+        if user.id == params[:job][:user_id] && !@jobs.include?(job)
           @jobs << job
         end 
       end 
