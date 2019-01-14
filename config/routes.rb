@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :locations
       post '/jobs/date', to: "jobs#jobs_by_date"
       post '/jobs/user_date', to: "jobs#users_job_by_date"
+      post '/jobs/week', to: "jobs#jobs_by_week"
       resources :jobs
       get '/users/current', to: 'users#jwt_user'
       resources :users

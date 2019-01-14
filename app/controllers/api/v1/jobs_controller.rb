@@ -29,6 +29,12 @@ class Api::V1::JobsController < ApplicationController
     render json: @jobs, status: :ok
   end
 
+  def jobs_by_week
+    @jobs = Job.where(schedule_date: params[:job][:week])
+  
+    render json: @jobs, status: :ok
+  end 
+
   def create
     @job = Job.find_by(jobs_params) 
     if @job
@@ -62,7 +68,7 @@ class Api::V1::JobsController < ApplicationController
   private
 
   def jobs_params
-    params.require(:job).permit(:id, :customer_id, :location_id, :team_id, :street_1, :street_2, :city, :zip, :state, :price, :schedule_date, :schedule_time, :start_time, :end_time, :status, :payment_type, :paid, :user_id, :description)
+    params.require(:job).permit(:id, :customer_id, :location_id, :team_id, :street_1, :street_2, :city, :zip, :state, :price, :schedule_date, :schedule_time, :start_time, :end_time, :status, :payment_type, :paid, :user_id, :description, :week)
   end 
 
   def find_job

@@ -37,3 +37,7 @@ Job.create(customer_id: 1, location_id: 1, team_id: 2, street_1: "1515 46th stre
 Job.create(customer_id: 1, location_id: 1, team_id: 2, street_1: "4111 DeMoine Ave", street_2: "Suite 205", city: "Fairlawn", zip: "07047", state: "NJ", price: 900, schedule_date: "1/25/2019", schedule_time: "8:00 am", paid: false)
 
 Job.create(customer_id: 1, location_id: 1, team_id: 1, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/25/2019", schedule_time: "8:00 am", paid: false)
+
+Job.create(customer_id: 1, location_id: 1, team_id: 1, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/14/2019", schedule_time: "8:00 am", paid: false)
+
+Job.create(customer_id: 1, location_id: 1, team_id: 1, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/14/2019", schedule_time: "8:00 am", paid: false)
