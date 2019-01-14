@@ -62,7 +62,7 @@ class Api::V1::JobsController < ApplicationController
   private
 
   def jobs_params
-    params.require(:job).permit(:id, :customer_id, :location_id, :team_id, :street_1, :street_2, :city, :zip, :state, :price, :schedule_date, :schedule_time, :start_time, :end_time, :status, :payment_type, :paid, :user_id)
+    params.require(:job).permit(:id, :customer_id, :location_id, :team_id, :street_1, :street_2, :city, :zip, :state, :price, :schedule_date, :schedule_time, :start_time, :end_time, :status, :payment_type, :paid, :user_id, :description)
   end 
 
   def find_job
