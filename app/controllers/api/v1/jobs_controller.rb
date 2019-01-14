@@ -16,7 +16,7 @@ class Api::V1::JobsController < ApplicationController
     all_jobs.each do |job| 
 
       job.team.users.each do |user|
-        if user.id == params[:job][:user_id] && !@jobs.include?(job)
+        if user.id == params[:job][:user_id] && !@jobs.include?(job) && job.status != "DN done"
           @jobs << job
         end 
       end 
