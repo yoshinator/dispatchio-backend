@@ -25,12 +25,12 @@ class Api::V1::JobsController < ApplicationController
   end
 
   def jobs_by_date
-    @jobs = Job.where(schedule_date: params[:job][:schedule_date])
+    @jobs = Job.where(schedule_date: params[:job][:schedule_date]).where(location_id: params[:job][:location_id])
     render json: @jobs, status: :ok
   end
 
   def jobs_by_week
-    @jobs = Job.where(schedule_date: params[:job][:week])
+    @jobs = Job.where(schedule_date: params[:job][:week]).where(location_id: params[:job][:location_id])
     render json: @jobs, status: :ok
   end 
 

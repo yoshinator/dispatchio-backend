@@ -8,7 +8,9 @@
 
 
 Company.create(name: "Power Cleanouts", phone: "201-624-1171", website: "http://powercleanouts.com")
+Company.create(name: "PLACEHOLDER", phone:"555-555-55555", website: "http://example.com")
 Location.create(city: "North Bergen", nickname: "north bergen", company_id: 1)
+Location.create(city: "PLACEHOLDER", nickname: "PLACEHOLDER", company_id: 2)
 
 User.create(user_type: "owner", f_name: "Yoan", l_name: "Ante", email: "yoanante@gmail.com", phone: "201-675-6069", location_id: 1,password: "hello")
 User.create(user_type: "manager", f_name: "George", l_name: "Menendez", email: "george@powercleanouts.com", phone: "201-624-1171", location_id: 1, password: "hello")
