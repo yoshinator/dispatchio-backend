@@ -16,6 +16,11 @@ class Api::V1::UsersController < ApplicationController
     render json: current_user, status: :accepted
   end 
 
+  def get_by_location
+    @users = User.where(location_id: params[:user][:location_id])
+    render json: @users, status: :ok
+  end
+
   def create
     @user = User.create(user_params)
     if @user.valid?

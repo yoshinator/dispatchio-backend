@@ -16,9 +16,9 @@ User.create(user_type: "owner", f_name: "Yoan", l_name: "Ante", email: "yoanante
 User.create(user_type: "manager", f_name: "George", l_name: "Menendez", email: "george@powercleanouts.com", phone: "201-624-1171", location_id: 1, password: "hello")
 User.create(user_type: "employee", f_name: "Miguel", l_name: "Diaz", email: "miguel@powercleanouts.com", phone: "201-555-5555", location_id: 1, password: "hello")
 
-Team.create(name: "Green")
-Team.create(name: "Yellow")
-Team.create(name: "Red")
+Team.create(name: "Green", location_id: 1)
+Team.create(name: "Yellow", location_id: 1)
+Team.create(name: "Red", location_id: 1)
 
 TeamUser.create(team_id: 1, user_id: 1)
 TeamUser.create(team_id: 1, user_id: 2)

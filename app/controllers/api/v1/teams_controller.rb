@@ -23,6 +23,11 @@ class Api::V1::TeamsController < ApplicationController
     end
   end
 
+  def by_location
+    @teams = Team.where(location_id: params[:team][:location_id])
+
+    render json: @teams, status: :ok
+  end
 
   def update
     @team.update(team_params)
@@ -43,7 +48,7 @@ class Api::V1::TeamsController < ApplicationController
   private
 
   def team_params
-    params.require(:team).permit(:id, :name)
+    params.require(:team).permit(:id, :name, :location_id)
   end 
 
   def find_team

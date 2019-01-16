@@ -3,6 +3,6 @@ class Location < ApplicationRecord
   belongs_to :company
   has_many :customers, through: :jobs
   has_many :users
-  has_many :teams, through: :job
+  has_many :teams
 
 end
