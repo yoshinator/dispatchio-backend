@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       resources :users
       post '/teams/location', to: 'teams#by_location'
       resources :teams
+      post '/customers/location', to: 'customers#by_location'
       resources :customers
       resources :locations
       post '/users/login', to: 'auth#create'
