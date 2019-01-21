@@ -31,6 +31,7 @@ class Api::V1::CustomersController < ApplicationController
   def update
     @customer.update(customer_params)
     if @customer.save
+      
       render json: @customer, status: :accepted
     else
       render json: { errors: @customer.errors.full_messages }, status: :unprocessible_entity
@@ -47,7 +48,7 @@ class Api::V1::CustomersController < ApplicationController
   private
 
   def customer_params
-    params.require(:customer).permit(:id, :customer_id, :location_id, :team_id, :street_1, :street_2, :city, :zip, :state, :price, :schedule_date, :schedule_time, :start_time, :end_time, :status, :payment_type, :paid)
+    params.require(:customer).permit(:id, :name, :poc, :location_id, :street_1, :street_2, :city, :zip, :state, :phone, :email)
   end 
 
   def find_customer
