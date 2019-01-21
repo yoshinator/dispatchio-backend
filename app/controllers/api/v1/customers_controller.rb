@@ -23,10 +23,8 @@ class Api::V1::CustomersController < ApplicationController
     end
   end
 
-    def by_location
-
+  def by_location
     @customers = Customer.where(location_id: params[:customers][:location_id])
-
     render json: @customers, status: :ok
   end
 
