@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_20_230908) do
+ActiveRecord::Schema.define(version: 2019_01_22_143115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,6 +100,9 @@ ActiveRecord::Schema.define(version: 2019_01_20_230908) do
     t.datetime "updated_at", null: false
     t.string "password"
     t.integer "location_id"
+    t.string "lat"
+    t.string "lon"
+    t.string "upat"
   end
 
 end
