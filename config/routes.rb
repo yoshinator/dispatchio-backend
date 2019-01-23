@@ -17,6 +17,8 @@ Rails.application.routes.draw do
       resources :locations
       post '/users/login', to: 'auth#create'
       post '/users/reset', to: 'users#change_pw'
+
+      post '/team_users', to: 'team_users#create'
       
     end 
   end 
