@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       post '/users/reset', to: 'users#change_pw'
 
       post '/team_users', to: 'team_users#create'
+      post '/team_users/remove', to: 'team_users#destroy'
       
     end 
   end 
