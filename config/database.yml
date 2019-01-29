@@ -24,9 +24,9 @@ default: &default
 development:
   <<: *default
   database: dispatchio-production
-    username: dispatchio
-    host: localhost
-    password: <%= ENV['DISPATCHIO_DATABASE_PASSWORD'] %>
+  username: dispatchio
+  host: localhost
+  password: <%= ENV['DISPATCHIO_DATABASE_PASSWORD'] %>
 
 
   # The specified database role being used to connect to postgres.
