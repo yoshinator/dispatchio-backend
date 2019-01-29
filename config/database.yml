@@ -23,7 +23,11 @@ default: &default
 
 development:
   <<: *default
-  database: dispatchio_development
+  database: dispatchio-production
+    username: dispatchio
+    host: localhost
+    password: <%= ENV['DISPATCHIO_DATABASE_PASSWORD'] %>
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +84,7 @@ test:
 #
 production:
   <<: *default
-  database: dispatchio_production
+  database: dispatchio-production
   username: dispatchio
+  host: localhost
   password: <%= ENV['DISPATCHIO_DATABASE_PASSWORD'] %>
