@@ -11,7 +11,6 @@ class Api::V1::CompaniesController < ApplicationController
   end
 
   def create
-    byebug
     @company = Company.find_by(name: company_params[:company][:name]) 
     @user = User.find(company_params[:user][:id])
     if @company
@@ -21,7 +20,6 @@ class Api::V1::CompaniesController < ApplicationController
 
       if @company.valid? && @location.valid?
         @user.update(location_id: @location.id)
-        
         render json: @company, status: :created
       else
         render json: { errors: @company.errors.full_messages, errors: @location.errors.full_message }, status: :unprocessible_entity
