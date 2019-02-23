@@ -11,21 +11,27 @@ class Api::V1::CompaniesController < ApplicationController
   end
 
   def create
-    @company = Company.find_by(company_params) 
-    if @user
+    byebug
+    @company = Company.find_by(name: company_params[:company][:name]) 
+    @user = User.find(company_params[:user][:id])
+    if @company
       render json: @company, status: :ok
-    else @company = Company.create(company_params)
-      if @company.valid?
+    else @company = Company.create(company_params[:company])
+         @location = Location.create(nickname: company_params[:location][:nickname], city: company_params[:location][:city], company_id: @company.id)
+
+      if @company.valid? && @location.valid?
+        @user.update(location_id: @location.id)
+        
         render json: @company, status: :created
       else
-        render json: { errors: @companies.errors.full_messages }, status: :unprocessible_entity
+        render json: { errors: @company.errors.full_messages, errors: @location.errors.full_message }, status: :unprocessible_entity
       end
     end
   end
 
 
   def update
-    @company.update(company_params)
+    @company.update(company_params[:company])
     if @company.save
       render json: @company, status: :accepted
     else
@@ -36,7 +42,7 @@ class Api::V1::CompaniesController < ApplicationController
   private
 
   def company_params
-    params.require(:company).permit(:id, :name, :phone, :website)
+    params.permit(company: [:name, :phone, :website], location: [:nickname, :city], user: [:id])
   end 
 
   def find_company
