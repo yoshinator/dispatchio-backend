@@ -11,6 +11,7 @@ JSON API BACKEND TO [DISPATCHIO.io](http://dispatchio.io) built using Ruby 2.3.3
 * endpoint document_root/api/v1/endpoint
 
 ## CURRENT USE CASES 
+
 ### Owner
 * A user will be able to create an account
 * A user will be able to create a company
@@ -28,8 +29,6 @@ JSON API BACKEND TO [DISPATCHIO.io](http://dispatchio.io) built using Ruby 2.3.3
 * A user will be able to edit a customer
 * A user will be able to delete a customer
 
-
-
 ### Manager
 * A user will be able to create an account
 * A user will be able to add employees
@@ -44,7 +43,7 @@ JSON API BACKEND TO [DISPATCHIO.io](http://dispatchio.io) built using Ruby 2.3.3
 * A user will be able to add a new customer
 * A user will be able to edit a customer
 
-Employee
+### Employee
 * A user will be able to create an account
 * A user will be able to see the jobs they are assigned to
 * A user will be able to see the teams they are assigned to
@@ -53,14 +52,14 @@ Employee
 ### Features needing implementation on front that are implemented in this api
 * A user will be able to assign employees to a location
 * A user will be able to edit employees
-* A user will be able to more locations to a company. 
-* A user will be able to reset his password (DN) 
-* A user will be able to update his phone number (DN)
-* A user will be able update his email (DN)
+* A user will be able to more locations to a company
+* A user will be able to reset his password 
+* A user will be able to update his phone number 
+* A user will be able update his email 
 
 ### Featurre request
 * A user will be able add photos of the job
 * A user will be able to see photos of the job
 
-* ...
+
 # dispatchio-backend
