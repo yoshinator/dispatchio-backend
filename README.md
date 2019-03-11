@@ -1,5 +1,10 @@
 # README
 
+## Dispatchio 
+Dispatchio is an application that allows businesses with a mobile workforce to dispatch their team members and get updates of the jobs they're doing. Built using React and Redux on the front end and Ruby on Rails on the backend. It uses JSON Web Tokens for authorization. The app has two views, one for managers and owners that presents a dashboard and a view for employees that only shows the jobs they are assigned to.
+
+
+
 JSON API BACKEND TO [DISPATCHIO.io](http://dispatchio.io) built using Ruby 2.3.3 FRONT END LOCATED at [https://github.com/yoshinator/dispatchio-front-end](https://github.com/yoshinator/dispatchio-front-end)
 
 * run Rails db:create && rails db:migrate && rails db:seed to get started with some test data. 
