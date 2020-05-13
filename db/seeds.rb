@@ -42,26 +42,26 @@ Customer.create(name: "Andrew Thompson", poc: "Jason", street_1: "505 Washington
 
 Customer.create(name: "RJD ", poc: "Greg", street_1: "14 Grand St", street_2: "", city: "Hoboken", state: "NJ", zip: "07011", phone: "212-444-1234", email: "Gregg@ubstudio.com", location_id: 2)
 
-Job.create(customer_id: 1, location_id: 2, team_id:3, street_1: "707 park ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 950, schedule_date: "1/25/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id:3, street_1: "707 park ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 950, schedule_date: "5/25/2019", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "505 willow ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 150, schedule_date: "1/26/2019", schedule_time: "12:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "505 willow ave", street_2: "", city: "hoboken", zip: "07011", state: "NJ", price: 150, schedule_date: "5/26/2019", schedule_time: "12:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "1515 46th street", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 750, schedule_date: "1/27/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "1515 46th street", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 750, schedule_date: "5/27/2020", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "4111 DeMoine Ave", street_2: "Suite 205", city: "Fairlawn", zip: "07047", state: "NJ", price: 900, schedule_date: "1/27/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "4111 DeMoine Ave", street_2: "Suite 205", city: "Fairlawn", zip: "07047", state: "NJ", price: 900, schedule_date: "5/27/2020", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "7204 Bergenline Ave  ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/25/2019", schedule_time: "11:00", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "7204 Bergenline Ave  ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "5/25/2020", schedule_time: "11:00", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "2113 Bergenline Ave  ", street_2: "", city: "Union City", zip: "07087", state: "NJ", price: 600, schedule_date: "1/29/2019", schedule_time: "2:00", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "2113 Bergenline Ave  ", street_2: "", city: "Union City", zip: "07087", state: "NJ", price: 600, schedule_date: "5/29/2020", schedule_time: "2:00", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 400, schedule_date: "1/22/2019", schedule_time: "2:00", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 400, schedule_date: "5/22/2020", schedule_time: "2:00", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "newport mall", street_2: "", city: "Jersey city", zip: "", state: "NJ", price: 300, schedule_date: "1/29/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "newport mall", street_2: "", city: "Jersey city", zip: "", state: "NJ", price: 300, schedule_date: "5/29/2020", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/27/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 2, street_1: "7204 Bergenline Ave 46th ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "5/27/2020", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "1527 8th street  ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "1/25/2019", schedule_time: "14:10", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "1527 8th street  ", street_2: "", city: "North Bergen", zip: "07047", state: "NJ", price: 500, schedule_date: "5/25/2020", schedule_time: "14:10", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "11 broadway ", street_2: "", city: "new york", zip: "08011", state: "Ny", price: 980, schedule_date: "1/26/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "11 broadway ", street_2: "", city: "new york", zip: "08011", state: "Ny", price: 980, schedule_date: "5/26/2020", schedule_time: "8:30", paid: false)
 
-Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "Gardens state plaze", street_2: "", city: "paramus", zip: "", state: "NJ", price: 6000, schedule_date: "1/27/2019", schedule_time: "8:30", paid: false)
+Job.create(customer_id: 1, location_id: 2, team_id: 3, street_1: "Gardens state plaze", street_2: "", city: "paramus", zip: "", state: "NJ", price: 6000, schedule_date: "5/27/2020", schedule_time: "8:30", paid: false)
