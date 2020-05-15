@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins '*', 'https://app.netlify.com/sites/mystifying-bartik-88de95', 'https://dispatchio.io'
+    origins '*', 'https://mystifying-bartik-88de95.netlify.app/', 'https://dispatchio.io'
   
     resource '*',
       headers: :any,
